@@ -1,7 +1,7 @@
 Title: Hello World Blog Post
 Author: Sean Kung
 Date: 2020-06-06 9:00
-Category: blogging
+Category: posts
 Tags: python, markdown, pelican
 Slug: hello-world-blog-post
 

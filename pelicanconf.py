@@ -2,12 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-DELETE_OUTPUT_DIRECTORY = True
-OUTPUT_RETENTION = ['CNAME']
-
 AUTHOR = 'Sean Kung'
 SITENAME = 'Sean Kung'
-SITEURL = ''
 
 PATH = 'content'
 
@@ -73,3 +69,5 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+DELETE_OUTPUT_DIRECTORY = True
+OUTPUT_RETENTION = ['CNAME', '.git']

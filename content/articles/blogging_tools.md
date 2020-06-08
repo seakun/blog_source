@@ -1,11 +1,11 @@
 Title: Blogging Tools
 Author: Sean Kung
 Date: 2020-06-06 10:00
-Category: blogging
+Category: posts
 Tags: python, markdown, pelican
-Slug: blogging-tools-post
+Slug: tools-post
 
-This post was brought to you by:
+The following tools were used to create this website:
 
 Python:
 

@@ -1,7 +1,7 @@
 Title: Sample Python Code
 Author: Sean Kung
 Date: 2020-06-06 11:00
-Category: blogging
+Category: posts
 Tags: python, markdown, pygments
 Slug: sample-python-code
 
