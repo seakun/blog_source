@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Sean Kung - posts</title><link href="https://seankung.com/" rel="alternate"></link><link href="https://seankung.com/feeds/posts.atom.xml" rel="self"></link><id>https://seankung.com/</id><updated>2020-06-11T00:00:00-04:00</updated><entry><title>Tic-Tac-Toe Writeup</title><link href="https://seankung.com/articles/2020/06/11/password-checker-wripteup/" rel="alternate"></link><published>2020-06-11T00:00:00-04:00</published><updated>2020-06-11T00:00:00-04:00</updated><author><name>Sean Kung</name></author><id>tag:seankung.com,2020-06-11:/articles/2020/06/11/password-checker-wripteup/</id><summary type="html">&lt;p&gt;The code sample is found &lt;a href="https://github.com/seakun/Python-Projects/blob/master/checkpassword.py"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Modules used: requests, hashlib, and sys.&lt;/p&gt;
+&lt;p&gt;We use this program to check if the given password was cracked.
+To do that we use the command line and type in the program name with as many passwords as we want to check:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;python3&lt;/span&gt; &lt;span class="n"&gt;checkpassword&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;The code sample is found &lt;a href="https://github.com/seakun/Python-Projects/blob/master/checkpassword.py"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Modules used: requests, hashlib, and sys.&lt;/p&gt;
+&lt;p&gt;We use this program to check if the given password was cracked.
+To do that we use the command line and type in the program name with as many passwords as we want to check:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;python3&lt;/span&gt; &lt;span class="n"&gt;checkpassword&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;password123&lt;/span&gt; &lt;span class="n"&gt;abc123&lt;/span&gt; &lt;span class="n"&gt;test123&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In the main method, it iterates through the arguments. In this case, checkpassword will loop through "password123", "abc123", and "test123".&lt;/p&gt;
+&lt;p&gt;The method calls pwned_api_check(password) to:
+⋅⋅&lt;em&gt; Hash the password using hashlib.
+⋅⋅&lt;/em&gt; Split the hashed password into the first 5 and last 5 characters.&lt;/p&gt;
+&lt;p&gt;We split the hashed password because it would be insecure to send the entire password over the internet anyway.&lt;/p&gt;
+&lt;p&gt;The database we're querying is on haveibeenpwned.com. We'll send a request and we'll get the list of all hashes that have that first 5 characters hashed.&lt;/p&gt;
+&lt;p&gt;It's in the get_password_leaks_count() method where we match the hashes and count the number of times that hash has shown up. &lt;/p&gt;
+&lt;p&gt;The program prints out if the password is found and how many times it showed up. Otherwise, it states the password wasn't found.&lt;/p&gt;</content><category term="posts"></category><category term="python"></category></entry><entry><title>Tic-Tac-Toe Writeup</title><link href="https://seankung.com/articles/2020/06/09/tic-tac-toe-wripteup/" rel="alternate"></link><published>2020-06-09T00:00:00-04:00</published><updated>2020-06-09T00:00:00-04:00</updated><author><name>Sean Kung</name></author><id>tag:seankung.com,2020-06-09:/articles/2020/06/09/tic-tac-toe-wripteup/</id><summary type="html">&lt;p&gt;The code sample is found &lt;a href="https://github.com/seakun/Python-Projects/tree/master/Tic-Tac-Toe"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Part 1: Printing the game board.&lt;/p&gt;
+&lt;p&gt;Part 2: Reading input. Format and print the board. &lt;/p&gt;
+&lt;p&gt;Part 3: In addition to part 2, find the current state of the board and print it which includes the following: "Game not finished", "Draw", "X wins", "O wins …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The code sample is found &lt;a href="https://github.com/seakun/Python-Projects/tree/master/Tic-Tac-Toe"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Part 1: Printing the game board.&lt;/p&gt;
+&lt;p&gt;Part 2: Reading input. Format and print the board. &lt;/p&gt;
+&lt;p&gt;Part 3: In addition to part 2, find the current state of the board and print it which includes the following: "Game not finished", "Draw", "X wins", "O wins", "Impossible".&lt;/p&gt;
+&lt;p&gt;Part 4: Read coordinates as input. Check input and make sure it's valid.&lt;/p&gt;
+&lt;p&gt;Part 5: Create an empty board. Start the game loop. End the game when there's a win or draw. &lt;/p&gt;</content><category term="posts"></category><category term="python"></category></entry><entry><title>Sample Python Code</title><link href="https://seankung.com/articles/2020/06/06/sample-python-code/" rel="alternate"></link><published>2020-06-06T11:00:00-04:00</published><updated>2020-06-06T11:00:00-04:00</updated><author><name>Sean Kung</name></author><id>tag:seankung.com,2020-06-06:/articles/2020/06/06/sample-python-code/</id><content type="html">&lt;p&gt;Code blocks are preceeded by an indent, three : symbols, and the name of the language.&lt;br&gt;
+All of the following code will be highlighted while the text is indented.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Hello World!&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="posts"></category><category term="python"></category><category term="markdown"></category><category term="pygments"></category></entry><entry><title>Blogging Tools</title><link href="https://seankung.com/articles/2020/06/06/tools-post/" rel="alternate"></link><published>2020-06-06T10:00:00-04:00</published><updated>2020-06-06T10:00:00-04:00</updated><author><name>Sean Kung</name></author><id>tag:seankung.com,2020-06-06:/articles/2020/06/06/tools-post/</id><content type="html">&lt;p&gt;The following tools were used to create this website:&lt;/p&gt;
+&lt;p&gt;Python:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="python logo" src="https://seankung.com/img/python_icon.png"&gt;&lt;/p&gt;
+&lt;p&gt;Pelican:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pelican logo" src="https://seankung.com/img/pelican_logo100x100.png"&gt;&lt;/p&gt;
+&lt;p&gt;Jinja2:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="jinga logo" src="https://seankung.com/img/jinja-logo.png"&gt;&lt;/p&gt;</content><category term="posts"></category><category term="python"></category><category term="markdown"></category><category term="pelican"></category></entry><entry><title>Hello World Blog Post</title><link href="https://seankung.com/articles/2020/06/06/hello-world-blog-post/" rel="alternate"></link><published>2020-06-06T09:00:00-04:00</published><updated>2020-06-06T09:00:00-04:00</updated><author><name>Sean Kung</name></author><id>tag:seankung.com,2020-06-06:/articles/2020/06/06/hello-world-blog-post/</id><content type="html">&lt;p&gt;Hello World!&lt;/p&gt;
+&lt;p&gt;Here are the tools used to make this &lt;a href="https://seankung.com/articles/2020/06/06/tools-post/"&gt;blog&lt;/a&gt;.&lt;/p&gt;</content><category term="posts"></category><category term="python"></category><category term="markdown"></category><category term="pelican"></category></entry></feed>
