@@ -1,4 +1,4 @@
-Title: Tic-Tac-Toe Writeup
+Title: Password Checker Writeup
 Author: Sean Kung
 Date: 2020-06-11
 Category: posts
@@ -21,8 +21,10 @@ To do that we use the command line and type in the program name with as many pas
 In the main method, it iterates through the arguments. In this case, checkpassword will loop through "password123", "abc123", and "test123".
 
 The method calls pwned_api_check(password) to:
-⋅⋅* Hash the password using hashlib.
-⋅⋅* Split the hashed password into the first 5 and last 5 characters.
+
+⋅Hash the password using hashlib.
+
+⋅Split the hashed password into the first 5 and last 5 characters.
 
 
 We split the hashed password because it would be insecure to send the entire password over the internet anyway.
